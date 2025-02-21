@@ -8,6 +8,7 @@
 
 int main() {
 printf("Desafio Super Trunfo - Países\n\n");
+printf("testando o segundo printf \n\n");
     
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
