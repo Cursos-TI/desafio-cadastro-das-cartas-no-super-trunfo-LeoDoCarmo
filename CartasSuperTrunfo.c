@@ -7,6 +7,8 @@
 //Teste larissa
 
 int main() {
+printf("hello world!");
+    
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
