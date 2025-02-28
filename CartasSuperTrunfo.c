@@ -12,7 +12,8 @@ int main() {
     char Estado1, Estado2;
     char CodigoDaCarta1[50], CodigoDaCarta2[50], NomeDaCidade1[50], NomeDaCidade2[50];
     int populacao1, populacao2, NumeroPontoTuristico1, NumeroPontoTuristico2;
-    float area1, area2, PIB1, PIB2;
+    double area1, area2, PIB1, PIB2;
+    double densidadePopulacional1, PIBperCapita1, densidadePopulacional2, PIBperCapita2; //acrescentei esta linha para a segunda parte do desafio.
 
     printf("Digite os dados das cartas: \n");
     printf("Carta 1 \n"); //declarei a carta.
@@ -29,11 +30,14 @@ int main() {
     printf("Populacao: ");
     scanf("%d", &populacao1); //solicitei o numero da população.
     printf("Area: ");
-    scanf("%f", &area1); //solicitei a area territorial.
+    scanf("%lf", &area1); //solicitei a area territorial.
     printf("PIB: ");
-    scanf("%f", &PIB1); //solicitei o PIB.
+    scanf("%lf", &PIB1); //solicitei o PIB.
     printf("Numero de Pontos Turisticos: ");
     scanf("%d", &NumeroPontoTuristico1); //solicitei o numero de ponto de turismo da cidade.
+
+    densidadePopulacional1 = populacao1 / area1; //acrescentei esta linha para a segunda parte do desafio.
+    PIBperCapita1 = PIB1 / populacao1; //acrescentei esta linha para a segunda parte do desafio.
     printf("\n");
 
     printf("Digite os dados das cartas: \n");
@@ -52,11 +56,15 @@ int main() {
     printf("Populacao: ");
     scanf("%d", &populacao2); //solicitei o numero da população.
     printf("Area: ");
-    scanf("%f", &area2); //solicitei a area territorial.
+    scanf("%lf", &area2); //solicitei a area territorial.
     printf("PIB: ");
-    scanf("%f", &PIB2); //solicitei o PIB.
+    scanf("%lf", &PIB2); //solicitei o PIB.
     printf("Numero de Pontos Turisticos: ");
     scanf("%d", &NumeroPontoTuristico2); //solicitei o numero de ponto de turismo da cidade.
+
+    densidadePopulacional2 = populacao2 / area2; //acrescentei esta linha para a segunda parte do desafio.
+    PIBperCapita2 = PIB2 / populacao2; //acrescentei esta linha para a segunda parte do desafio.
+    printf("\n");
 
     printf("\n");
     printf("Carta 1 \n"); //abaixo dei saida a todos os dados coletados.
@@ -64,9 +72,11 @@ int main() {
     printf("Codigo: %s\n", CodigoDaCarta1);
     printf("Nome da Cidade: %s\n", NomeDaCidade1);
     printf("Populacao: %d\n", populacao1);
-    printf("Area: %.2f\n", area1);
-    printf("PIB: %.2f\n", PIB1);
+    printf("Area: %.2lf\n", area1);
+    printf("PIB: %.2lf\n", PIB1);
     printf("Numero de Pontos Turisticos: %d \n", NumeroPontoTuristico1);
+    printf("Densidade Populacional: %.2lf\n", densidadePopulacional1); //acrescentei esta linha para a segunda parte do desafio.
+    printf("PIB per Capita: %.2lf\n", PIBperCapita1); //acrescentei esta linha para a segunda parte do desafio.
 
     printf("\n");
     printf("Carta 2 \n"); //abaixo dei saida a todos os dados coletados.
@@ -74,9 +84,11 @@ int main() {
     printf("Codigo: %s\n", CodigoDaCarta2);
     printf("Nome da Cidade: %s\n", NomeDaCidade2);
     printf("Populacao: %d\n", populacao2);
-    printf("Area: %.2f\n", area2);
-    printf("PIB: %.2f\n", PIB2);
+    printf("Area: %.2lf\n", area2);
+    printf("PIB: %.2lf\n", PIB2);
     printf("Numero de Pontos Turisticos: %d \n", NumeroPontoTuristico2);
+    printf("Densidade Populacional: %.2lf\n", densidadePopulacional2); //acrescentei esta linha para a segunda parte do desafio.
+    printf("PIB per Capita: %.2lf\n", PIBperCapita2); //acrescentei esta linha para a segunda parte do desafio.
 
 return 0;
 }
